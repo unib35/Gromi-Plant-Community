@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" src="style.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+      </script>
+
+    <style>
+        .nav-item{
+            padding-left: 50px;
+        }
+        
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    
+    </style>
+    
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+  <!-- JQuery 자바스크립트 추가-->
+  <script src='./'></script>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Gromi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">식물 추천</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">커뮤니티</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="justify-content-end">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">회원정보</a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--코드 작성-->
+    <main>
+    	<!-- 인디케이터 포함 캐러셀 --> 
+    	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		  <!-- data-bs-interval : 슬라이드 지연 시간 -->
+		    <div class="carousel-item active" data-bs-interval="1000">
+		     <h3 class="text-center fw-small">첫번째 공지사항</h3>
+		    </div>
+		    <div class="carousel-item" data-bs-interval="1000">
+		     <h3 class="text-center fw-normal">두번째 공지사항</h3>
+		    </div>
+		    <div class="carousel-item" data-bs-interval="1000">
+		     <h3 class="text-center fw-normal">세번째 공지사항</h3>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		
+    
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+          <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-bold text-wrap">GROMI 식물커뮤니티</h1>
+            <p class="lead fw-bold">알고싶은 식물을 검색하고 원하는 식물에 대해 찾아보세요!</p>
+            <a class="btn btn-outline-secondary" href="./plantDetail.html">많은 식물 알아보기</a>
+          </div>
+          
+          <div class="product-plant shadow-sm d-none d-md-block"><img src="data:image/jpeg;base64,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"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+      
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5 fw-normal">식물 추천</h2>
+              <p class="lead fw-normal">그로미의 추천을 받아 당신의 식물을 찾아보세요.</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5 fw-normal">커뮤니티</h2>
+              <p class="lead fw-normal">당신의 식물을 공유해보세요.</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+        </div>
+      
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Another headline</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+          <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Another headline</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+        </div>
+      </main>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </symbol>
+    </svg>
+
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+
+                    <img src="https://starteacher-v5-upload.s3.ap-northeast-2.amazonaws.com/institute/logoaf34051b140f0305b0593ebd85bf43b1170b2268067bd03b3e7a0353b0df1c8e877810ac50891df6e550db9a15ab69fe"
+                        width="30">
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; Goormbbang Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

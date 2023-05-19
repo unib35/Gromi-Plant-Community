@@ -1,1 +1,0 @@
-# Gromi-Plant-Community

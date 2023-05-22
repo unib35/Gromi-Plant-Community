@@ -1,0 +1,81 @@
+<form action="" method="post">
+<input type ="image" src"1.jpg"
+<br> <img src="1.jpg">
+
+<br>
+<fieldset>
+    <legend> 회원정보 </legend>
+
+<input type="number" min="0.0" max="10.0" step="0.5">
+<br>
+<input type="range" min="0" max="100" list="te">
+<datalist id="te">
+    <option value="10" label="Low">
+    <option value="50" label="Medium">
+    <option value="90" label="High">
+    </datalist>
+    </fieldset>
+
+
+<br>
+month : <input type="month"> <br>
+week : <input type="week"> <br>
+date : <input type="date"> <br>
+time : <input type="time"> <br>
+local : <input type="datetime-local"> <br>
+
+<br>
+<input type="color" value="00BFFF"
+        onchange="document.body.style.color=this.value"> <!-- 현재 문서의 바디의 스타일 컬러, 텍스트는 정적웹아니고 동적웹이라 별개 -->
+
+
+<br>
+<label> 사용자 ID :
+            <input type="text" size="15" value="">
+</label>
+
+<br>
+
+<label for="loginID"> 사용자 ID : </label>
+<input type="text" size="20" value="" id="loginID">
+<br>
+select name="china"
+        <option value="1">짜장면</option>
+        <option value="2" selected>짬뽕</option>
+        <option value="3">탕수육</option>
+</select>
+
+<br>
+짜장면 <input type="checkbox" value="1" name="a">
+짬뽕 <input type="checkbox" value="2" checked name="b">
+탕수육 <input type="checkbox" value="3" name="c"> <!-- name 다르면 중복선택 가능 -->
+
+짜장면 <input type="radio" value="1" name="f">
+짬뽕 <input type="radio" value="2" checked name="f">
+탕수육 <input type="radio" value="3" name="f"> <!-- name 동일하면 중복선택 불가 -->
+
+<br>
+나라 : <input type ="text" list="co">
+    <datalist id="co"
+        <option value="가나">
+        <option value="스위스">
+        <option value="브라질">
+        </datalist>
+        
+<br> 아이디 <input type="text" name="id" size="10" maxlength="5" value="홍길동" />
+
+<br>
+<textarea cols="10" rows="20" name="text" wrap="hard">
+긴글을 작성해주세요
+</textarea>
+<br> 비번 <input type="password" name="pass" size="10" maxlength="5" value="123">
+<br> 파일 <input type="file" name="file">
+<br> 체크박스 <input type="checkbox">
+<br> 라디오박스 <input type="radio">
+<br> 숨기기<input type="hidden">
+<br> 그냥 버튼<input type="buttont">
+
+
+<br> <input type="submit" value="가입하기">
+<input type="reset" value="초기화">
+</form>

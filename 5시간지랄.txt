@@ -1,0 +1,7 @@
+T9!rP+bU*JU*$u
+T9!rP+bU*JU*$uT9!rP+bU*JU*$u
+wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-8.0.27.tar.gz
+
+mv mysql-connector-java-8.0.27.jar /var/lib/tomcat9/webapps/ROOT/WEB-INF/lib/
+
+http://115.85.183.74:8080/testing.jsp

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -165,21 +166,21 @@
             setTimeout(function () {
                 document.querySelector('.slide-container').classList.add('slide-out-left');
                 setTimeout(function () {
-                    window.location.href = 'season.html';
+                    window.location.href = 'season.jsp';
                 }, 500);
             }, 1000);
         } else if (button.classList.contains('active') && button.textContent.trim() === '꽃색') {
             setTimeout(function () {
                 document.querySelector('.slide-container').classList.add('slide-out-left');
                 setTimeout(function () {
-                    window.location.href = 'flowercolor.html';
+                    window.location.href = 'flowercolor.jsp';
                 }, 500);
             }, 1000);
         } else if (button.classList.contains('active') && button.textContent.trim() === '빛이 적어도 되는') {
             setTimeout(function () {
                 document.querySelector('.slide-container').classList.add('slide-out-left');
                 setTimeout(function () {
-                    window.location.href = 'sunlight.html';
+                    window.location.href = 'sunlight.jsp';
                 }, 500);
             }, 1000);
         }
